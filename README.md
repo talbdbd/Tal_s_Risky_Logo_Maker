@@ -23,6 +23,7 @@ Node.js is required to run this project.
 ## Usage
 
 Use Node.js to run the logo maker.
+Video Walkthrough: https://www.youtube.com/watch?v=1eQ8Sxx1m-Q
 
 ## Credits
 
