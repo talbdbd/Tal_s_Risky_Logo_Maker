@@ -54,15 +54,17 @@ function generateSVG(text, textColor, shape, shapeColor) {
 
   // Generate SVG content
   const svgContent = `<?xml version="1.0"?>
-    <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-      <style>
-        svg { background-color: white; }
-        text { font: bold 48px Arial; fill: ${textColor}; text-anchor: middle; dominant-baseline: middle; }
-        .shape { fill: ${shapeColor}; }
-      </style>
-      <text x="${width / 2}" y="${height / 2}">${text}</text>
-      <g class="shape">${getShapeSVG(shape)}</g>
-    </svg>`;
+  <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      svg { background-color: white; }
+      text { font: bold 48px Arial; fill: ${textColor}; text-anchor: middle; dominant-baseline: middle; }
+      .shape { fill: ${shapeColor}; }
+    </style>
+    
+    <g class="shape">${getShapeSVG(shape)}</g>
+
+    <text x="${width / 2}" y="${height / 2}">${text}</text>
+  </svg>`;
 
   // Save SVG to file
   fs.writeFileSync('logo.svg', svgContent);
