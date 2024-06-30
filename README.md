@@ -22,7 +22,7 @@ Node.js is required to run this project.
 
 ## Usage
 
-Use Node.js to run the generator.
+Use Node.js to run the logo maker.
 
 ## Credits
 
